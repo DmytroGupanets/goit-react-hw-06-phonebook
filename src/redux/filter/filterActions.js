@@ -1,6 +1,9 @@
-import { UPDATE_FILTER_VALUE } from "../constants/constants";
+import { createAction } from "@reduxjs/toolkit";
 
-export const updateFilterValue = (value = "") => ({
-  type: UPDATE_FILTER_VALUE,
-  payload: value,
-});
+export const updateFilterValue = createAction("updateFilterValue");
+
+// =========================== Redux =====================
+// export const updateFilterValue = (value = "") => ({
+//   type: UPDATE_FILTER_VALUE,
+//   payload: value,
+// });

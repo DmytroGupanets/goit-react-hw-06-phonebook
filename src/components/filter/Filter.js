@@ -29,5 +29,3 @@ const mapStateToProps = (state, props) => ({
 });
 
 export default connect(mapStateToProps, { updateFilterValue })(Filter);
-
-//  обновлять FilterValue в Redux, метод
