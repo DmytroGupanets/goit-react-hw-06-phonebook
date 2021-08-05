@@ -2,13 +2,9 @@ import { combineReducers } from "redux";
 import contactsItemReducer from "./contacts/contactsReducer";
 import contactsFilterReducer from "./filter/filterReducer";
 
-const contactsReducer = combineReducers({
+const rootReducer = combineReducers({
   items: contactsItemReducer,
   filter: contactsFilterReducer,
-});
-
-const rootReducer = combineReducers({
-  contacts: contactsReducer,
 });
 
 export default rootReducer;

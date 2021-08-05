@@ -2,7 +2,7 @@ import { createReducer } from "@reduxjs/toolkit";
 import { updateFilterValue } from "./filterActions";
 
 const contactsFilterReducer = createReducer("", {
-  [updateFilterValue]: (state, { type, payload }) => payload,
+  [updateFilterValue]: (_, { payload }) => payload,
 });
 
 export default contactsFilterReducer;
